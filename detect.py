@@ -1,5 +1,5 @@
 import cv2
-impport numpy as np
+import numpy as np
 # read the image 
 img = cv2.read("img.jpg")
 
@@ -9,7 +9,7 @@ hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 # suppose we want to detect the blue color
 # provide the lower and upper range of blue color
 
-lowe_range = np.array([10,50,50])
+lower_range = np.array([10,50,50])
 upper_range = np.array([130,255,255])
 
 # create mask
